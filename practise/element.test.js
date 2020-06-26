@@ -9,6 +9,7 @@ it ("Get text for elements", () => {
     // let text = $(".heading").getText()
     let text = $("#page-footer").getText()
     console.log(text)
+    internetPage.getLiText()
 
 })
 
