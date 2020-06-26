@@ -10,10 +10,32 @@ it ("Get text for elements", () => {
     let text = $("#page-footer").getText()
     console.log(text)
     internetPage.getLiText()
+    internetPage.getSpecificElementText(3) 
+})
 
+it("Is Footer Displayed", () => {
+    console.log(internetPage.pageFooter.isDisplayed())
+})
+
+it("Does the header exist", () => {
+    console.log(internetPage.pageHeader.isExisting())
+})
+
+it("Is footer in viewport?", () => {
+    console.log(internetPage.pageFooter.isDisplayedInViewport())
+})
+
+it("Is header in viewport?", () => {
+    console.log(internetPage.pageHeader.isDisplayedInViewport())
+})
+
+it("Is subheader enabled?", () => {
+    console.log(internetPage.subHeading.isEnabled())
 })
 
 
-
+it("Click Element", () => {
+    internetPage.clickOnLink()
+})
 
 })
