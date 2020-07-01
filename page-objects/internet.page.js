@@ -16,6 +16,22 @@ class Internet {
     get username() { return $('#username') }
     get password() { return $('#password') }
 
+
+    figures(index) { return $(`.example .figure:nth-child(${index}) img`)}
+    figureDetails(index) { return $(`.example .figure:nth-child(${index}) .figcaption`)}
+    
+    // Hovers over the specified image
+    hoverOnFigure(index) {
+        this.figures(index).waitForDisplayed()
+        this.figures(index).moveTo(1,1)
+    }
+
+    // Returns the text of the figure details
+    getHoverDetailsText(index) {
+       this.figureDetails(index).waitForDisplayed()
+       return  this.figureDetails(index).getText()
+    }
+
     enterUsername(text) {
         this.username.waitForDisplayed()
         this.username.setValue(text)

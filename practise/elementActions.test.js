@@ -1,5 +1,3 @@
-const internetPage = require("../page-objects/internet.page")
-const { assert } = require("chai")
 
 
 internetPage = require ("../page-objects/internet.page")
