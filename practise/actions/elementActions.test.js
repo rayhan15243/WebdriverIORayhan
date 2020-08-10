@@ -1,6 +1,6 @@
 
 
-internetPage = require ("../page-objects/internet.page")
+internetPage = require ("../../page-objects/internet.page")
 
 describe(' Test element actions', function() {
     

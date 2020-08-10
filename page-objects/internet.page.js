@@ -44,8 +44,52 @@ class internetPage{
     get dropdownMenuOption1() { return $('#dropdown option:nth-child(2)') }
     get dropdownMenuOption2() { return $('#dropdown option:nth-child(3)') }
 
+    get enableButton() { return $('#input-example button') }
+    get inputEnabledField() { return $('#input-example input') }
+
    
     javascriptAlertButton(index) { return $(`.example li:nth-child(${index}) button`) }
+
+    get exampleButton() { return $('.example button') }
+    deleteButton(index) { return $('#elements button:nth-child(${index})') }
+
+    get pageButton() { return $('#checkbox-example button') }
+
+
+    // Click the Page Button
+
+    clickPageButton() {
+    this.pageButton.waitForDisplayed()
+    this.pageButton.click()
+    }
+
+
+
+    // Click the Example Button
+    clickExampleButton() {
+        this.exampleButton.waitForDisplayed()
+        this.exampleButton.click()
+    }
+
+
+    // Clicks the delete button
+
+    clickDeleteButton(index) {
+        this.deleteButton(index).waitForDisplayed()
+        this.deleteButton(index).click()
+    } 
+
+
+
+
+
+    
+    // Click the Enable/Disable Button
+
+    clickEnableButton() {
+        this.enableButton.waitForDisplayed()
+        this.enableButton.click()
+    }
 
 
    // Click the specified javascript alert button

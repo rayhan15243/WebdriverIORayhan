@@ -19,6 +19,14 @@ exports.config = {
     specs: [
         './practise/**/*.js'
     ],
+
+    //npm run actions
+    suites: {
+        actions: [
+            './test/actions/*.js'
+        ]
+    },
+
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
