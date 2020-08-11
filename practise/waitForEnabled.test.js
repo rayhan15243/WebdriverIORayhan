@@ -9,6 +9,7 @@ describe("Wait For Enabled", function () {
         internetPages.inputEnabledField.waitForEnabled(4000)
         assert.equal(true, internetPages.inputEnabledField.isEnabled())
         browser.pause(4000)
+        browser.debug()
     })
 
     it('should wait for the input field to be disabled', () => {

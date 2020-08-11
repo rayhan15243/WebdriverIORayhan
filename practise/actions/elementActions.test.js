@@ -1,6 +1,8 @@
-
-
 internetPage = require ("../../page-objects/internet.page")
+loginData = require ("../../data/loginData.page")
+
+// npm test -- --spec actions/elementActions.test.js
+// ENV=qa npm actions
 
 describe(' Test element actions', function() {
     
@@ -29,21 +31,20 @@ describe(' Test element actions', function() {
 
      it('should enter username'), () => {
         browser.url('${browser.options.baseUrl}/login')
-        internetPage.enterUsername('Julia')
-        assert.equals('Julia', internetPage.username.getValue())
+        internetPage.enterUsername(loginData.userName)
+        assert.equals(loginData.userName), internetPage.username.getValue()
      }
 
      it('should enter password'), () => {
         browser.url('${browser.options.baseUrl}/login')
-        internetPage.enterPassword('Password')
-        assert.equals('Password', internetPage.password.getValue())
+        internetPage.enterPassword(loginData.password)
+        assert.equals(loginData.userName), internetPage.password.getValue()
      }
 
 
      it('should clear value'), () => {
          internetPage.username.click()
          internetPage.username.clearValue()
-
          assert.equals('', internetPage.username.getValue())
 
      }
