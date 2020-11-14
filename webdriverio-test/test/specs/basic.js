@@ -5,3 +5,4 @@ describe('webdriver.io page', () => {
     })
 })
 
+// #npx wdio wdio.conf.js
