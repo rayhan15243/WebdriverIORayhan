@@ -1,0 +1,30 @@
+{
+  "name": "webdriverio-tests",
+  "version": "1.0.0",
+  "description": "webdriverio test scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayhan15243/webDriverIO-Practise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rayhan15243/webDriverIO-Practise/issues"
+  },
+  "homepage": "https://github.com/rayhan15243/webDriverIO-Practise#readme",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^6.7.2",
+    "@wdio/cli": "^6.7.4",
+    "@wdio/local-runner": "^6.7.3",
+    "@wdio/mocha-framework": "^6.7.3",
+    "@wdio/spec-reporter": "^6.7.0",
+    "@wdio/sync": "^6.7.3",
+    "chromedriver": "^86.0.0",
+    "wdio-chromedriver-service": "^6.0.4",
+    "webdriverio": "^6.7.3"
+  }
+}
